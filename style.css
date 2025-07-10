@@ -10,3 +10,8 @@
 section {
   padding-top: 5rem;
 }
+
+.bold {
+  font-weight: 300;
+}
+

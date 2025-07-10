@@ -48,10 +48,10 @@
     <!-- end navbar -->
 
     <!-- jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/poto portofolio.jpg" alt="Habiburrahman AQW" width="200" class="rounded-circle img-thumbnail" data-aos="zoom-in" />
-      <h1 class="display-4">Habiburrahman AQW</h1>
-      <p class="lead">Student | First Child</p>
+    <section class="jumbotron text-center" id="home">
+      <img src="img/me.jpg" alt="Habiburrahman AQW" width="200" class="rounded-circle img-thumbnail" data-aos="zoom-in" />
+      <h1 class="display-4">Habiburrahman Aurasina Qudsi Wibowo</h1>
+      <p class="lead">Fresh graduate</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -70,12 +70,12 @@
             <h2>About Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum culpa earum exercitationem unde non nemo. Mollitia repellat magni eos?</p>
+        <div class="row justify-content-center fs-5 text-start">
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+            <p>Seorang lulusan SMK jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki kemampuan dasar dalam mengembangkan website (Junior Web developer), mempelajari hal baru dengan cepat yang didukung oleh ketelitian dan ketekunan dalam menyelesaikan setiap tugas. </p>
           </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione earum autem, beatae qui aut deleniti similique distinctio eum ad! Harum cupiditate quas iusto quaerat maxime?</p>
+          <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <p>Menjaga etika dan tanggung jawab sosial dalam setiap interaksi dan keputusan. Saya berkomitmen untuk terus mengembangkan diri dan berkontribusi secara positif dimanapun saya berada.</p>
           </div>
         </div>
       </div>
@@ -97,31 +97,31 @@
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="500">
-              <img src="img/1.jpg" class="card-img-top" alt="Projects1" />
+              <img src="img/p1.png" class="card-img-top" alt="Projects1" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Proyek membuat Perpustakaan digital berbasis web yang bertujuan untuk memudahkan akses ke sumber ilmu pada perpustakaan FSTI ISTN. Dibagun menggunakan Laravel, HTML, CSS, Bootstrap, dan java Script.</p><span>(Tugas akhir sekolah)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
-              <img src="img/2.jpg" class="card-img-top" alt="Projects2" />
+              <img src="img/c2.png" class="card-img-top" alt="Projects2" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Membuat website company profile untuk keperluan Uji Kompetensi keahlian dari sekolah yang diadakan oleh LSP. Dibagun menggunakan Laravel, HTML, CSS, Bootstrap, dan java Script.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <!-- <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/3.jpg" class="card-img-top" alt="Projects3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -145,21 +145,31 @@
         <div class="row justify-content-center">
           <div class="col-md-6" data-aos="fade-up">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              Pesan<strong>Terkirim!</strong>
+              Pesan <strong>Terkirim!</strong>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form name="wpu-contact-form">
+            <div class="alert alert-danger alert-dismissible fade show d-none my-alert-error" role="alert">
+              Pesan <strong>Gagal Terkirim!</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="contact-form" id="contact-form" action="javascript:void(0)">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required/>
               </div>
-              <div class="mb-3">
+              <div class="row">
+              <div class="col-md-6 mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required/>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Judul</label>
+                <input type="text" class="form-control" id="judul" aria-describedby="judul" name="judul" required/>
+              </div>
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
 
@@ -171,7 +181,7 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 315">
         <path
           fill="#0d6efd"
           fill-opacity="1"
@@ -195,12 +205,9 @@
       AOS.init();
     </script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script>
-      gsap.to(".jumbotron img", { duration: 1, rotateY: 360 });
-    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
-    <script>
+    <!-- <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycby1xX6e2JMYLuPmRWXnhDuEGZsqP3Cke6_8ka_2TEFp7TpBkFRJFzl_wq1Lam6m0qE/exec";
       const form = document.forms["wpu-contact-form"];
       const btnKirim = document.querySelector(".btn-kirim");
@@ -226,6 +233,79 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
-    </script>
+    </script> -->
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+      window.addEventListener("scroll", () => {
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 80; // offset untuk navbar sticky
+          const sectionHeight = section.offsetHeight;
+
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + currentSection) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("jMiAaFNk4vsiMhvgV");
+    })();
+  </script>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const btnKirim = document.querySelector(".btn-kirim");
+    const btnLoading = document.querySelector(".btn-loading");
+    const alertSuccess = document.querySelector(".my-alert");
+    const alertError = document.querySelector(".my-alert-error");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // tampilkan tombol loading, sembunyikan tombol kirim
+      btnLoading.classList.remove("d-none");
+      btnKirim.classList.add("d-none");
+
+      emailjs.sendForm('service_diaxynt', 'template_1f8moym', this)
+        .then(() => {
+          // tampilkan tombol kirim, sembunyikan loading
+          btnLoading.classList.add("d-none");
+          btnKirim.classList.remove("d-none");
+
+          // tampilkan alert
+          alertSuccess.classList.remove("d-none");
+
+          // reset form
+          form.reset();
+        }, (error) => {
+          console.error("Gagal mengirim email:", error);
+          btnLoading.classList.add("d-none");
+          btnKirim.classList.remove("d-none");
+          alertError.classList.remove("d-none");
+        });
+    });
+  </script> 
+
   </body>
 </html>
